@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.loginBox {
+  margin-left: 10px;
+}
+
+.navbar {
+  margin-bottom: 0px !important;
+}
+
+.navbar .container {
+  margin-left: 0px !important;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.signIn {
+  background-color: #222;  
+  color: white;
+  height: 580px;
+  /* float: inherit ; */
+  /* float: none; */
+}
+
+.bgW {
+  background-color: #080;
+  color: #fff;
+}
+
+.bgW {
+  background-color: #080;
+  color: #fff;
+}
+
+.starRating {
+  display: block;
+  height: 13px;
+  background: url(./star_rating_sprite.png) 0 -26px;
+}
+
+.last6 {
+    width: 12px;
+    height: 6px;
+    float: left;
+    border-top: 2px solid transparent;
+    border-bottom: 1px solid transparent;
+    margin-left: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    border-radius: 1px;
+}
+
