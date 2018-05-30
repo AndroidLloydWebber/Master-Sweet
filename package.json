@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "engines": {
-    "node": "8.9.4"
+    "node": "9.4.0"
   },
   "bugs": {
     "url": "https://github.com/AndroidLloydWebber/Master-Sweet/issues"
