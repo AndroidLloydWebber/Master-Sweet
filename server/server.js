@@ -4,6 +4,7 @@ var mongo = require('mongodb');
 const bodyParser = require('body-parser');
 const passport = require('passport');
 const cors = require('cors');
+const path = require('path');
 
 const app = express(); // initialize express into app
 app.use(cors()); // enabling all cors
@@ -28,15 +29,20 @@ app.use(passport.initialize());
 
 require('./config/passport')(passport);
 
+const staticFiles = express.static(path.join(__dirname, '../../client/build'));
+app.use(staticFiles);
+
 var boxers = require('./routes/boxers');
 var users = require('./routes/users');
 var myboxers = require('./routes/myboxers');
+
 
 
 app.use('/api/boxers', boxers);
 app.use('/api/users', users);
 app.use('/api/myboxers', myboxers);
 
+app.use('/*', staticFiles)
 const port = process.env.PORT || 5000;
 
 app.get('/', (req, res) => res.send('Hello World connected mother pearl'));
